@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafe website</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/stylesheet.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Joti+One&family=Oxanium:wght@200..800&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?faImily=Acme&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+      <header>
+        <div class="headbox">
+          <div class="first"><h1>FoodPhoria</h1></div>
+          <div class="chefimg">
+            <img src="{{ url_for('static', filename='images/small purple chef.png') }}" alt="My Image">
+            <!-- <img src="img food cafe/small purple chef.png"> -->
+          </div>
+          <div class="three"><h4>"Do you believe in love at first bite?"</h4></div>
+        </div>
+        <br>
+        <br>
+          <div class="search1">
+        <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          <h5>
+          <!-- <textarea name="feedback" id="101" placeholder="please gave your valuable feedback here" rows="10">>"  What's  in  your  mind  today  ?  "</textarea> -->
+           <input type="text" placeholder="What's in your mind today ?" height="1000" >
+          </h5> 
+          <select name="dish">
+            <option value="click">CLICK ME!</option>
+            <option value="Pizza">
+              <a href="cookbook.html">PIZZA</a>
+            </option>
+            <option value="Fries">
+              <a href="cookbook.html">FRIES</a>
+            </option>
+            <option value="Sandwich">
+              <a href="cookbook.html">SANDWICH</a>
+            </option>
+            <option value="Momos">
+              <a href="cookbook.html">MOMOS</a>
+            </option>
+            <option value="Maggi">
+              <a href="cookbook.html">MAGGI</a>
+            </option>
+            <option value="Desserts">
+              <a href="cookbook.html">DESSERTS</a>
+            </option>
+            <option value="Drinks">
+              <a href="cookbook.html">DRINKS</a>
+            </option>
+            <option value="Ice creme">
+              <a href="cookbook.html">ICE CREME</a>
+            </option>
+          </select>
+          <br>
+          <br>
+        </div>
+        </div>
+        <BR>
+        <BR>
+        <div class="food">
+          <img src="{{ url_for('static', filename='images/pink food.jpg') }}" alt="My Image">
+          <!-- <img src="img food cafe/pink food.jpg" height="1400" width="3799" style="filter: brightness(80%)"/> -->
+        <BR>
+        <BR>
+        <br>
+        <br>
+        <div>
+          <nav>
+            <a><i class="fa-solid fa-bars"></i></a>
+            <a href="index.html" ">HOME</a>
+            <a href="aboutus.html">ABOUT US</a>
+            <a href="location.html">LOCATION</a>
+            <a href="cookbook.html">COOKBOOK</a>
+            <a href="offer.html">OFFER</a>
+          </nav>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="foodbox">
+          <div class="box">
+            <img src="{{ url_for('static', filename='images/burger pink.png') }}" alt="My Image">
+            <!-- <img src="img food cafe/burger pink.png" height="800" width="805" /> -->
+          </div>
+          <div class="box">
+            <img src="{{ url_for('static', filename='images/pink dessert.png') }}" alt="My Image">
+            <!-- <img src="img food cafe/pink dessert.png"  height="800" width="805"/> -->
+          </div>
+          <div class="box">
+            <img src="{{ url_for('static', filename='images/brown burritos.jpg') }}" alt="My Image">
+            <!-- <img src="img food cafe/brown burritos.jpg"  height="800" width="805"/> -->
+          </div>
+          <div class="box">
+            <img src="{{ url_for('static', filename='images/drink pink.png') }}" alt="My Image">
+            <!-- <img src="img food cafe/drink pink.png" height="800" width="805" /> -->
+          </div>
+          <div class="box">
+            <img src="{{ url_for('static', filename='images/tacospink.png') }}" alt="My Image">
+            <!-- <img src="img food cafe/tacospink.png" height="800" width="805" /> -->
+          </div>
+          <div class="box">
+            <img src="{{ url_for('static', filename='images/pizzza.jpg') }}" alt="My Image">
+            <!-- <img src="img food cafe/pizzza.jpg"  height="800" width="805"/> -->
+          </div>
+          <div class="box">
+            <img src="{{ url_for('static', filename='images/pink combo.jpg') }}" alt="My Image">
+            <!-- <img src="img food cafe/pink combo.jpg" height="800" width="805"/> -->
+          </div>
+          <div class="box">
+            <img src="{{ url_for('static', filename='images/Strawberry-Ice-Cream-.jpg') }}" alt="My Image">
+            <!-- <img src="img food cafe/Strawberry-Ice-Cream-.jpg" height="800" width="805" /> -->
+          </div>
+        </div>
+        <br>
+        <br>
+      <div class="feedback">
+          <a href="feedback.html">FEEDBACK</a>
+      </div>
+      <br>
+      <br>
+      <div class="tittle">
+        <h1>Cookery Wizard</h1>
+      </div>
+      <div class="chefbox">
+        <div class="chefphoto">
+          <img src="{{ url_for('static', filename='images/MANVI BU.jpg') }}" alt="My Image">
+          <!-- <img src="img food cafe/MANVI BU.jpg" height="1000"> -->
+        </div>
+        <div class="chefphoto">
+          <img src="{{ url_for('static', filename='images/vansh BU .jpg') }}" alt="My Image">
+          <!-- <img src="img food cafe/vansh BU .jpg" height="1000"> -->
+        </div>
+        <div class="chefphoto">
+          <img src="{{ url_for('static', filename='images/MANYA BU.jpg') }}" alt="My Image">
+          <!-- <img src="img food cafe/MANYA BU.jpg" height="1000"> -->
+        </div>
+        <div class="chefphoto">
+          <img src="{{ url_for('static', filename='images/yash bu.jpg') }}" alt="My Image">
+          <!-- <img src="img food cafe/yash bu.jpg" height="1000"> -->
+        </div>
+        <div class="chefphoto">
+          <img src="{{ url_for('static', filename='images/VIRAT BU.jpg') }}" alt="My Image">
+          <!-- <img src="img food cafe/VIRAT BU.jpg" height="1000"> -->
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
